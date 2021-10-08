@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+span{
+    vertical-align: sub;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    box-shadow: 10px 0 30px rgb(60, 105, 204),
+                0 10px 30px rgb(132, 206, 200),
+                -10px 0 30px yellow,
+                0 -10px 30px rgb(231, 97, 131);                            
+}
+img:hover {
+    box-shadow:
+                -10px 0 30px yellow,
+                0 10px 30px rgb(132, 206, 200),
+                10px 0 30px rgb(60, 105, 204),
+                0 -10px 30px rgb(231, 97, 131);
+}
+
+
+.text {
+    margin-top: 100px;
+    padding: 10px;
+    width: 600px;
+    background: rgb(230, 162, 226);
+    border: 2px solid rgb(169, 245, 220);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 174, 255);
+}
+
+.symbols {
+    margin-top: 100px;
+    font-size: 52px;
+}
+
+.chess {
+    margin-top: 100px;
+    padding-right: 20px;
+    border: 1px solid black;
+}
+.chess td {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+.chess tr:nth-child(even) > :nth-child(2n+3){
+    background: black;
+}
+.chess tr:nth-child(2n+3) > :nth-child(even){
+    background: black;
+}
+.chess tr:nth-child(n+2) > :nth-child(n+2){
+    border: 1px solid black;
+}
+
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.svg-container{
+    display:inline-block;
+    width:300px;
+    height:300px;
+}
+circle#circ{
+    fill: rgb(174, 37, 179);
+    stroke: rgb(211, 180, 43);
+    stroke-width: 10;
+    stroke-dasharray: 308,450;
+   
+}
+#val {
+    position: absolute;
+    font-size: 36px;
+}
+
+
+
+.quest form{
+
+    padding: 100px;
+    
+    font-size: 24px;
+}
+.quest label {
+    margin-bottom: 20px;
+}
+.quest input {
+    border-radius: 10px;
+    padding: 5px;
+}
+button {
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-size: 24px; 
+}
+.quest input:valid {
+    border: 2px solid green;
+}
+.quest input:invalid {
+    border: 2px solid red;
+}
+
+.container {
+    width: 50%;
+}
+
+.container__wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* пропорции блока определяются здесь */
+    display: flex; 
+    justify-content: center; /* элемент центрируется */
+}
+
+.container__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(240, 140, 207);
+  
+}
+
+.lang form{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.lang input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+}
